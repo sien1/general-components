@@ -17,13 +17,13 @@ const LoadBar = (props) => {
         width:props.progress + '%',
         height:'100%',
         maxWidth:'100%',
-        background:`linear-gradient(to left, #dedede 80%, ${props.barColor} 100%)`,
+        background:`linear-gradient(to left, #dedede 0%, ${props.barColor} 20%)`,
         borderTopRightRadius:'5px',
-        borderBottomRightRadius:'5px'
+        borderBottomRightRadius:'5px',
+        transition:'width 1s'
     };
 
     return (
-        
         <div style={styleContainer}>
             <div style={styleBar}></div>
         </div>

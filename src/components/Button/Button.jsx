@@ -4,7 +4,6 @@ import './Button.css'
 const Button = () => {
     let style = {
         padding:'3px',
-        margin:'10px',
         paddingRight:'15px',
         paddingLeft:'15px',
         textAlign:'center',
