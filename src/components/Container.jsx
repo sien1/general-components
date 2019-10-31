@@ -12,46 +12,33 @@ const  Container  = (props) => {
         boxShadow:'0px 3px 5px rgba(0,0,0,.1)',
         backgroundColor:'white',
         borderRadius:'10px',
-        padding:'0px',
         boxSizing:'border-box',
         position:'relative',
         zIndex:'0',
+        overflowY:'auto'
     };
 
     let styleInside = {
+        padding:'10px',
+        paddingTop:'100px',
+       
         position:'absolute',
-       // background:'linear-gradient(180deg, rgba(0,0,0, .2) 0%, rgba(0,0,0, 0) 26%)',
+        background:'linear-gradient(180deg, rgba(0,0,0, 1) 0%, rgba(0,0,0,0) 8%)',
         borderRadius:'10px',
         boxSizing:'border-box',
         float:'left',
         boxSizing:'border-box',
         width:'100%',
-        minHeight:'100%',
-       
         zIndex:'1',
         left:'0',
-        top:'0',
-        overflow:'auto',
-        backgroundColor:'black'
-        
+        top:'0'
     };
-
-    let styleScrollable = {
-        float:'left',
-        width:'100%',
-        overflowY:'auto',
-        backgroundColor:'yellow',
-        paddingTop:'10%',
-        padding:'10px',
-    }
 
     return (
         <div style={style}>
             <HeaderCard></HeaderCard>
             <div style={styleInside}>
-                <div style={styleScrollable}>
-                    {props.children}   
-                </div>
+                {props.children}
             </div>
         </div>
     );

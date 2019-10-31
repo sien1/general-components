@@ -12,7 +12,6 @@ const MenuContainer =  (props) => {
         boxSizing:'border-box',
         position:'fixed',
         left:'2%'
-
     };
 
     return (

@@ -8,7 +8,7 @@ const HeaderCard = () => {
     }
 
     let styleImg={
-        //backgroundImage:"url(" + "/images/Industrial_12376832.jpg" + ")",
+        backgroundImage:"url(" + "/images/Industrial_12376832.jpg" + ")",
         width:'100%',
         height:'100%',
         backgroundPosition:'center',
